@@ -1,1 +1,120 @@
-/*# sourceMappingURL=popular.css.map */
+/* Colors */
+:root {
+  --PrimaryColor: hsl(26, 93%, 50%);
+  --HoverColor: hsl(26, 90%, 42%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(240, 1%, 48%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyBg: hsl(0, 0%, 96%);
+  --greyText: hsl(190, 190%, 190%);
+  --inputColor: hsl(330, 12%, 97%);
+}
+
+.popular {
+  padding-top: 15rem;
+}
+.popular .secHeader {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.popular .secHeader .textDiv .secTitle {
+  line-height: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+.popular .secHeader .textDiv p {
+  font-size: 13px;
+  color: var(--textColor);
+  font-weight: 500;
+}
+.popular .secHeader .textDiv .iconsDiv {
+  gap: 0.5rem;
+}
+.popular .secHeader .textDiv .iconsDiv .icon {
+  padding: 0.5rem;
+  background: rgb(190, 190, 190);
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 2.5rem;
+}
+.popular .secHeader .textDiv .iconsDiv .icon:hover {
+  background-color: var(--blackColor);
+  color: var(--whiteColor);
+}
+.popular .secHeader .textDiv .iconsDiv .leftIcon {
+  background: var(--blackColor);
+  color: var(--whiteColor);
+}
+.popular .secHeader .textDiv .iconsDiv .leftIcon:hover {
+  background: var(--greyText);
+  color: var(--blackColor);
+}
+.popular .mainContent {
+  padding: 2rem 0;
+  gap: 1rem;
+}
+.popular .mainContent .singleDestination {
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px 4px rgba(178, 178, 178, 0.4);
+}
+.popular .mainContent .singleDestination .destImage {
+  height: 200px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.popular .mainContent .singleDestination .destImage img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.popular .mainContent .singleDestination .destImage .overlayInfo {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(rgba(0, 0, 0, 0.846), rgba(0, 0, 0, 0.76));
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.popular .mainContent .singleDestination .destImage .overlayInfo h3 {
+  color: var(--whiteColor);
+  font-weight: 600;
+}
+.popular .mainContent .singleDestination .destImage .overlayInfo p {
+  color: var(--whiteColor);
+  opacity: 0.7;
+  font-size: 13px;
+}
+.popular .mainContent .singleDestination .destImage .overlayInfo .icon {
+  position: absolute;
+  background-color: var(--PrimaryColor);
+  right: 10px;
+  bottom: 10px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  font-size: 2.5rem;
+  color: var(--whiteColor);
+  border: 1px solid transparent;
+  transition: 0.3s ease;
+}
+.popular .mainContent .singleDestination .destImage .overlayInfo .icon:hover {
+  background: var(--blackColor);
+  border: 1px solid var(--PrimaryColor);
+  color: var(--PrimaryColor);
+}
+.popular .mainContent .singleDestination .desFooter {
+  padding: 1rem;
+}
+.popular .mainContent .singleDestination .desFooter .number {
+  font-size: 3rem;
+  font-weight: 700;
+  position: relative;
+  color: var(--blackColor);
+}/*# sourceMappingURL=popular.css.map */
