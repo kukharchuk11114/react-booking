@@ -14,9 +14,19 @@ const showNav = () => {setActive('navBar activeNavbar')}
 // code to close navBar
 const closeNav = () => {setActive('navBar')}
 
+// code to add grey color to header
+const [transparent, setTransparent] = useState("header")
+const addBg = ()=>{
+  if(window.scrollY >= 10){
+    setTransparent("header activeHeader")
+  }else{
+    setTransparent("header")
+  }
+}
+window.addEventListener('scroll', addBg)
   return (
     <section className='navBarSection'>
-      <div className="header">
+      <div className={transparent}>
         <div className="logoDiv">
           <a href="#" className='logo'>
             <h1 className='flex'><MdOutlineTravelExplore className='icon'/>Lil Co.</h1>
