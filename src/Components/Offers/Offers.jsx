@@ -74,23 +74,17 @@ const Offers = () => {
                     <LuBedSingle className='icon' />
                     <small>2 Beds</small>
                   </div>
-                </div>
 
-                <div className="amenities flex">
                   <div className="singleAmenity flex">
                     <FaBath className='icon' />
                     <small>Bath</small>
                   </div>
-                </div>
 
-                <div className="amenities flex">
                   <div className="singleAmenity flex">
                     <FaWifi className='icon' />
                     <small>Wi-Fi</small>
                   </div>
-                </div>
 
-                <div className="amenities flex">
                   <div className="singleAmenity flex">
                     <FaVanShuttle className='icon' />
                     <small>Airoport Shuttle</small>
